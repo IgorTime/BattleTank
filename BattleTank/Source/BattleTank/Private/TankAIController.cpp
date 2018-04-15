@@ -34,14 +34,13 @@ void ATankAIController::BeginPlay()
 void ATankAIController::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
-	auto Tank = GetControlledTank();
+/*
 	auto PlayerTank = GetPlayerTank();
 
-	if (Tank && PlayerTank)
+	if (PlayerTank)
 	{
-		Tank->AimAt(PlayerTank->GetTransform().GetLocation());
-	}
+		GetControlledTank()->AimAt(PlayerTank->GetActorLocation());
+	}*/
 }
 
 AATank* ATankAIController::GetControlledTank() const

@@ -12,13 +12,13 @@ class BATTLETANK_API AATank : public APawn
 	GENERATED_BODY()
 
 public:
-	void AimAt(FVector HitLocation);
-
-private:	
 	AATank();
 
 	virtual void BeginPlay() override;
 	virtual void Tick(float DeltaTime) override;
 
+	void AimAt(FVector HitLocation);
+
+private:	
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 };
